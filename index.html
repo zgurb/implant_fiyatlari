@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>implant fiyatları</title>
+<script type="text/javascript" src="hesaplama.js"></script>
+</head>
+<body>
+<form id="disform" action="">
+<fieldset style="border: 0px;">
+<div id="totalPrice" style="background: #FF0; font-size: 24px; margin: 0px 0px 20px;"></div>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td width="5%"><input name="selecteddis" type="radio" value="Round6" onchange="calculateTotal()"/></td>
+<td width="95%"><label class="radiolabel">1 implant (Tek diş implant)</label></td>
+</tr>
+<tr>
+<td width="5%"><input name="selecteddis" type="radio" value="Round8" onchange="calculateTotal()"/></td>
+<td width="95%"><label class="radiolabel">2-6 implant (Kuron köprü)</label></td>
+</tr>
+<tr>
+<td width="5%"><input name="selecteddis" type="radio" value="Round10" onchange="calculateTotal()"/></td>
+<td width="95%"><label class="radiolabel">3-4 implant (Kaplama implant diş)</label></td>
+</tr>
+<tr>
+<td width="5%"><input name="selecteddis" type="radio" value="Round12" onchange="calculateTotal()"/></td>
+<td width="95%"><label class="radiolabel">Alt ve üst çene &#8211; BÜTÜN DİŞLER</label></td>
+</tr>
+<tr>
+<td width="5%"></td>
+<td width="95%">İmplant markası:<br />
+<select id="filling" name="filling" onchange="calculateTotal()"><option selected="selected" value="None">Yerli</option><option value="1">Yabancı</option></select></td>
+</tr>
+<tr>
+<td width="5%"><input id="includeeks" name="includeeks" type="checkbox" onchange="calculateTotal()"/></td>
+<td width="95%"><label class="inlinelabel" for="includeeks">Muayane ücreti</label></td>
+</tr>
+<tr>
+<td width="5%"><input id="includeinscription" name="includeinscription" type="checkbox" onchange="calculateTotal()"/></td>
+<td width="95%"><label class="inlinelabel" for="includeinscription2">Diş çekimi + Diğer işlemler</label></td>
+</tr>
+</tbody>
+</table>
+<p>Kaynak: <a href="http://www.disimplanti.gen.tr/implant-fiyatlari/">http://www.disimplanti.gen.tr/implant-fiyatlari/</a></p>
+</fieldset>
+</form>
+</body>
+</html>
